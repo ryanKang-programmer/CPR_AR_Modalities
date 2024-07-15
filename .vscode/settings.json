@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CPR_UI_.sln"
+    "dotnet.defaultSolution": "CPR_AR_Modalities.sln"
 }

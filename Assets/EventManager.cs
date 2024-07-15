@@ -185,7 +185,9 @@ public class EventManager : MonoBehaviour
         {
             Debug.Log("socket.OnConnected");
         };
-
+        /*This is a trigger from a server
+        We will modify this part from a local scrip according to the scenario
+        */
         socket.On("currentStatus", (response) => {
             Debug.Log("currentStatus");
             Debug.Log(response);
