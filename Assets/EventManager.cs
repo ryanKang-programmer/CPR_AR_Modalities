@@ -21,6 +21,7 @@ using Microsoft.MixedReality.GraphicsTools;
 public class EventManager : MonoBehaviour
 {
     private Queue<Action> m_queueAction = new Queue<Action>();
+    
 
     // public Transform head;
     // public Transform origin;
@@ -57,6 +58,30 @@ public class EventManager : MonoBehaviour
     public GameObject notiCprPref;
     public GameObject notiEpiPref;
     public GameObject notiMedPref;
+
+    // random times for UI updates
+    private float[] updateTimes = new float[]
+    {
+        0f,    // 0:00
+        60f,   // 1:00
+        105f,  // 1:45
+        150f,  // 2:30
+        185f,  // 3:05
+        235f,  // 3:55
+        285f,  // 4:45
+        320f,  // 5:20
+        360f,  // 6:00
+        400f,  // 6:40
+        450f,  // 7:30
+        490f,  // 8:10
+        535f,  // 8:55
+        565f,  // 9:25
+        605f,  // 10:05
+        675f   // 11:15
+    };
+
+    private int hardcodedIndex = 0; // Default index value, can be changed in Unity Inspector
+
     /*
     *CanvasBackplate
     *CPRBorderCanvasBackplate //CPR less 10 sec
@@ -73,7 +98,7 @@ public class EventManager : MonoBehaviour
 
     // Update is called once per frame
 
-    public SocketIOUnity socket;
+    //public SocketIOUnity socket;
     int idx = 1;
 
     double startTimestamp = 0;
@@ -95,6 +120,9 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        StartCoroutine(UpdateUIAtSpecificTimes());
+
         Debug.Log(algorithm);
         
         if (GameObject.FindWithTag("CPRTimer") != null) {
@@ -172,59 +200,59 @@ public class EventManager : MonoBehaviour
             notiTransform = noti.transform;
         }
 
-        var uri = new Uri("http://136.159.140.66");
+        // var uri = new Uri("http://136.159.140.66");
 
-        socket = new SocketIOUnity(uri, new SocketIOOptions
-        {
-            Path = "/cpr/socket.io"
-        });
+        // socket = new SocketIOUnity(uri, new SocketIOOptions
+        // {
+        //     Path = "/cpr/socket.io"
+        // });
 
-        socket.JsonSerializer = new NewtonsoftJsonSerializer();
+        // socket.JsonSerializer = new NewtonsoftJsonSerializer();
 
-        socket.OnConnected += (sender, e) =>
-        {
-            Debug.Log("socket.OnConnected");
-        };
-        /*This is a trigger from a server
-        We will modify this part from a local scrip according to the scenario
-        */
-        socket.On("currentStatus", (response) => {
-            Debug.Log("currentStatus");
-            Debug.Log(response);
+        // socket.OnConnected += (sender, e) =>
+        // {
+        //     Debug.Log("socket.OnConnected");
+        // };
+        // /*This is a trigger from a server
+        // We will modify this part from a local scrip according to the scenario
+        // */
+        // socket.On("currentStatus", (response) => {
+        //     Debug.Log("currentStatus");
+        //     Debug.Log(response);
 
-            idx = response.GetValue<int>();
-            Debug.Log("idx: " + idx);
+        //     idx = response.GetValue<int>();
+        //     Debug.Log("idx: " + idx);
 
-            DateTime currentTime = DateTime.UtcNow;
-            long unixTime = ((DateTimeOffset)currentTime).ToUnixTimeMilliseconds();
+        //     DateTime currentTime = DateTime.UtcNow;
+        //     long unixTime = ((DateTimeOffset)currentTime).ToUnixTimeMilliseconds();
 
-            startTimestamp = response.GetValue<double>(1);
-            cprStartTimestamp = response.GetValue<double>(2);
-            epiStartTimestamp = response.GetValue<double>(3);
+        //     startTimestamp = response.GetValue<double>(1);
+        //     cprStartTimestamp = response.GetValue<double>(2);
+        //     epiStartTimestamp = response.GetValue<double>(3);
 
-            Debug.Log("startTimestamp:" + startTimestamp);
+        //     Debug.Log("startTimestamp:" + startTimestamp);
 
-            time1 = (cprStartTimestamp - unixTime) / 1000 + 120;
-            time2 = (epiStartTimestamp - unixTime) / 1000 + 300;
+        //     time1 = (cprStartTimestamp - unixTime) / 1000 + 120;
+        //     time2 = (epiStartTimestamp - unixTime) / 1000 + 300;
 
-            m_queueAction.Enqueue(() => UpdateUI(idx));
-        });
+        //     m_queueAction.Enqueue(() => UpdateUI(idx));
+        // });
 
-        socket.On("medication", (response) => {
-            try {
-                Debug.Log("medication");
-                Debug.Log(response);
-                string name = response.GetValue<string>(0);
-                string dose = response.GetValue<string>(1);
+        // socket.On("medication", (response) => {
+        //     try {
+        //         Debug.Log("medication");
+        //         Debug.Log(response);
+        //         string name = response.GetValue<string>(0);
+        //         string dose = response.GetValue<string>(1);
 
-                m_queueAction.Enqueue(() => UpdateNoti(name, dose, 0));
-            } catch (Exception e) {
-                Debug.Log(e);
-            }
-        });
+        //         m_queueAction.Enqueue(() => UpdateNoti(name, dose, 0));
+        //     } catch (Exception e) {
+        //         Debug.Log(e);
+        //     }
+        // });
 
-        Debug.Log("Connecting...");
-        socket.Connect();
+        // Debug.Log("Connecting...");
+        // socket.Connect();
     }
 
 /*
@@ -232,6 +260,22 @@ public class EventManager : MonoBehaviour
 *    type: 1 cpr
 *    type: 2 epi
 */
+
+    private IEnumerator UpdateUIAtSpecificTimes()
+    {
+        float startTime = Time.time;
+        for (int i = 0; i < updateTimes.Length; i++)
+        {
+            float targetTime = startTime + updateTimes[i];
+            while (Time.time < targetTime)
+            {
+                yield return null; // Wait until the target time is reached
+            }
+            
+            UpdateUI(i); // Update UI based on the index
+            Debug.Log($"Updated UI at {updateTimes[i] / 60f}:{updateTimes[i] % 60f:00} with index: {i}");
+        }
+    }
     void UpdateNoti (string name, string dose, int type) {
         if (noti != null && notiTransform != null) {
             if (type == 0 && notiMedPref != null) {
