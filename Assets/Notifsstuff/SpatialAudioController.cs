@@ -19,15 +19,32 @@ public class SpatialAudioController : MonoBehaviour
 
     private Coroutine currentPingCoroutine;
     private Coroutine timedPingCoroutine;
+    private float startTime;
+    private AudioSource[] pingSources;
 
     private void Start()
     {
         // Start the timed spatial audio pings coroutine
-        timedPingCoroutine = StartCoroutine(TriggerTimedSpatialAudioPings());
+        //timedPingCoroutine = StartCoroutine(TriggerTimedSpatialAudioPings());
+        // Initialize the array with the audio sources
+        pingSources = new AudioSource[]
+        {
+            northPing, southPing, eastPing, westPing,
+            northeastPing, northwestPing, southeastPing, southwestPing
+        };
+
+        // Record the start time
+        startTime = Time.time;
     }
 
     private void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            StartCoroutine(TriggerTimedSpatialAudioPings());
+        }
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             StartPing(northPing);
@@ -40,7 +57,7 @@ public class SpatialAudioController : MonoBehaviour
         {
             StartPing(eastPing);
         }
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             StartPing(southeastPing);
         }
@@ -87,24 +104,77 @@ public class SpatialAudioController : MonoBehaviour
         }
     }
 
+    // private IEnumerator TriggerTimedSpatialAudioPings()
+    // {
+    //     while (true)
+    //     {
+    //         // Trigger audio pings at the specified times
+    //         yield return new WaitForSeconds(0f); // Wait for 1 minute
+    //         StartPing(southeastPing); // South-East
+    //         Debug.Log("ping!");
+
+    //         yield return new WaitForSeconds(45f); // Now at 1:45 (105 seconds in total)
+    //         StartPing(northwestPing); // North-West
+    //         Debug.Log("ping!");
+
+    //         yield return new WaitForSeconds(45f); // Now at 2:30 (150 seconds in total)
+    //         StartPing(southwestPing); // South-West
+    //         Debug.Log("ping!");
+
+    //         yield return new WaitForSeconds(35f); // Now at 3:05 (185 seconds in total)
+    //         StartPing(eastPing); // East
+    //         Debug.Log("ping!");
+
+    //         yield return new WaitForSeconds(50f); // Now at 3:55 (235 seconds in total)
+    //         StartPing(westPing); // West
+    //         Debug.Log("ping!");
+
+    //         // Wait for the next cycle to start
+    //         yield return new WaitForSeconds(0f); // Start immediately or modify as needed
+    //     }
+    // }
+
     private IEnumerator TriggerTimedSpatialAudioPings()
     {
         while (true)
         {
-            // Trigger audio pings at the specified times
-            yield return new WaitForSeconds(285f);
-            StartPing(southeastPing); // South-East
-            yield return new WaitForSeconds(35f);
-            StartPing(northwestPing); // North-West
-            yield return new WaitForSeconds(40f);
-            StartPing(southwestPing); // South-West
-            yield return new WaitForSeconds(40f);
-            StartPing(eastPing); // East
-            yield return new WaitForSeconds(50f);
-            StartPing(westPing); // West
+            // Pick a random interval between 30 and 50 seconds
+            float randomInterval = Random.Range(30f, 50f);
+            
+            // Trigger a random audio ping (you can add a mechanism to randomly choose a ping if needed)
+            StartPing(southeastPing); // Example: triggering Southeast ping
+            Debug.Log("ping!");
 
-            // Wait for the next cycle to start
-            yield return new WaitForSeconds(300f); // Adjust the wait time as needed
+            // Wait for the random interval before the next ping
+            yield return new WaitForSeconds(randomInterval);
+            
+            // Repeat for additional pings if needed
+            randomInterval = Random.Range(30f, 50f);
+            StartPing(northwestPing); // Example: triggering Northwest ping
+            Debug.Log("ping!");
+
+            yield return new WaitForSeconds(randomInterval);
+            
+            randomInterval = Random.Range(30f, 50f);
+            StartPing(southwestPing); // Example: triggering Southwest ping
+            Debug.Log("ping!");
+
+            yield return new WaitForSeconds(randomInterval);
+            
+            randomInterval = Random.Range(30f, 50f);
+            StartPing(eastPing); // Example: triggering East ping
+            Debug.Log("ping!");
+
+            yield return new WaitForSeconds(randomInterval);
+            
+            randomInterval = Random.Range(30f, 50f);
+            StartPing(westPing); // Example: triggering West ping
+            Debug.Log("ping!");
+
+            // Wait for the next cycle to start with a random interval
+            yield return new WaitForSeconds(Random.Range(30f, 50f)); // Start next cycle
         }
     }
+
+
 }

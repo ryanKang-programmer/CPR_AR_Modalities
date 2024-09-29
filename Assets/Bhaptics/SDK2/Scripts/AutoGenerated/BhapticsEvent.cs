@@ -17,84 +17,106 @@ namespace Bhaptics.SDK2
     public class BhapticsEvent
     {
         
-        public const string FD4 = "fd4";
-        
-        public const string BC2 = "bc2";
-        
-        public const string BA4 = "ba4";
-        
-        public const string BE3 = "be3";
-        
-        public const string BE4 = "be4";
-        
-        public const string BC4 = "bc4";
-        
-        public const string BB4 = "bb4";
-        
-        public const string FA4 = "fa4";
-        
-        public const string FA1 = "fa1";
-        
-        public const string FA3 = "fa3";
-        
-        public const string BC1 = "bc1";
-        
-        public const string FB3 = "fb3";
-        
-        public const string BA2 = "ba2";
-        
-        public const string FD1 = "fd1";
-        
-        public const string BD2 = "bd2";
-        
         public const string BD1 = "bd1";
         
-        public const string BB2 = "bb2";
+        public const string N_E = "n-e";
         
-        public const string FE1 = "fe1";
-        
-        public const string BC3 = "bc3";
-        
-        public const string FD3 = "fd3";
-        
-        public const string FB1 = "fb1";
-        
-        public const string FE4 = "fe4";
+        public const string FB4 = "fb4";
         
         public const string FB2 = "fb2";
         
-        public const string BB1 = "bb1";
-        
-        public const string BE1 = "be1";
-        
-        public const string FE2 = "fe2";
-        
-        public const string FC4 = "fc4";
-        
-        public const string BD4 = "bd4";
-        
         public const string FA2 = "fa2";
         
-        public const string FC1 = "fc1";
+        public const string NORTH = "north";
         
         public const string FC3 = "fc3";
         
+        public const string BA4 = "ba4";
+        
+        public const string BE2 = "be2";
+        
+        public const string FB3 = "fb3";
+        
+        public const string FD4 = "fd4";
+        
+        public const string BA1 = "ba1";
+        
+        public const string FE1 = "fe1";
+        
+        public const string FA1 = "fa1";
+        
         public const string BD3 = "bd3";
+        
+        public const string FD2 = "fd2";
+        
+        public const string BC2 = "bc2";
+        
+        public const string BD4 = "bd4";
+        
+        public const string BB1 = "bb1";
+        
+        public const string BC1 = "bc1";
+        
+        public const string FD1 = "fd1";
+        
+        public const string BC4 = "bc4";
+        
+        public const string BB3 = "bb3";
+        
+        public const string BA2 = "ba2";
+        
+        public const string BA3 = "ba3";
+        
+        public const string FE4 = "fe4";
+        
+        public const string SWEST = "swest";
+        
+        public const string BE3 = "be3";
+        
+        public const string BB2 = "bb2";
+        
+        public const string BC3 = "bc3";
+        
+        public const string FA4 = "fa4";
+        
+        public const string NEAST = "neast";
+        
+        public const string BE1 = "be1";
+        
+        public const string FB1 = "fb1";
+        
+        public const string BE4 = "be4";
+        
+        public const string BB4 = "bb4";
+        
+        public const string FD3 = "fd3";
         
         public const string FC2 = "fc2";
         
         public const string FE3 = "fe3";
         
-        public const string BB3 = "bb3";
+        public const string FA3 = "fa3";
         
-        public const string BA1 = "ba1";
+        public const string SEAST = "seast";
         
-        public const string BA3 = "ba3";
+        public const string NWEST = "nwest";
         
-        public const string BE2 = "be2";
+        public const string SOUTH = "south";
         
-        public const string FB4 = "fb4";
+        public const string FC4 = "fc4";
         
-        public const string FD2 = "fd2";
+        public const string FULL = "full";
+        
+        public const string BD2 = "bd2";
+        
+        public const string EAST = "east";
+        
+        public const string FE2 = "fe2";
+        
+        public const string WEST = "west";
+        
+        public const string S_E = "s-e";
+        
+        public const string FC1 = "fc1";
     }
 }

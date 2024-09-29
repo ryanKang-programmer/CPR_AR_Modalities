@@ -150,25 +150,55 @@ public class StaticHaptics : MonoBehaviour
         BhapticsLibrary.StopByEventId(eventName);
     }
 
+    // IEnumerator TriggerTimedHaptics()
+    // {
+    //     while (true)
+    //     {
+    //         yield return new WaitForSeconds(60f);
+    //         TriggerHapticEvent("south");
+    //         //TriggerHapticEvent("bb3"); // South
+    //         yield return new WaitForSeconds(105f);
+    //         TriggerHapticEvent("s-e"); // South-East
+    //         yield return new WaitForSeconds(150f);
+    //         TriggerHapticEvent("n-e"); // North-East
+    //         yield return new WaitForSeconds(185f);
+    //         TriggerHapticEvent("east"); // East
+    //         yield return new WaitForSeconds(235f);
+    //         TriggerHapticEvent("west");
+    //         //TriggerHapticEvent("fb3"); // North
+
+    //         // Wait for the next cycle to start
+    //         yield return new WaitForSeconds(300f); // Adjust the wait time as needed
+    //     }
+    // }
+
     IEnumerator TriggerTimedHaptics()
     {
         while (true)
         {
-            yield return new WaitForSeconds(490f);
-            TriggerHapticEvent("bb2");
-            TriggerHapticEvent("bb3"); // South
-            yield return new WaitForSeconds(45f);
-            TriggerHapticEvent("ba4"); // South-East
-            yield return new WaitForSeconds(30f);
-            TriggerHapticEvent("fa4"); // North-East
-            yield return new WaitForSeconds(40f);
-            TriggerHapticEvent("fe4"); // East
-            yield return new WaitForSeconds(70f);
-            TriggerHapticEvent("fb2");
-            TriggerHapticEvent("fb3"); // North
+            yield return new WaitForSeconds(60f);
+            Debug.Log("Triggering South Haptic Event");
+            TriggerHapticEvent("south");
+
+            yield return new WaitForSeconds(45f); // 105f total time (1:45)
+            Debug.Log("Triggering South-East Haptic Event");
+            TriggerHapticEvent("s-e");
+
+            yield return new WaitForSeconds(45f); // 150f total time (2:30)
+            Debug.Log("Triggering North-East Haptic Event");
+            TriggerHapticEvent("n-e");
+
+            yield return new WaitForSeconds(35f); // 185f total time (3:05)
+            Debug.Log("Triggering East Haptic Event");
+            TriggerHapticEvent("east");
+
+            yield return new WaitForSeconds(50f); // 235f total time (3:55)
+            Debug.Log("Triggering West Haptic Event");
+            TriggerHapticEvent("west");
 
             // Wait for the next cycle to start
             yield return new WaitForSeconds(300f); // Adjust the wait time as needed
         }
     }
+
 }

@@ -9,7 +9,7 @@ public class ArrowController : MonoBehaviour
     public float blinkDuration = 5f; //duration to blink for each notification
     private float[] blinkTimes = new float[]
     {
-        60f,   // 1:00
+        30f,   // 1:00
         105f,  // 1:45
         150f,  // 2:30
         185f,  // 3:05

@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using Unity.XR.CoreUtils;
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
+//using System;
+//using System.Collections;
+//using System.Collections.Generic;
 using SocketIOClient;
 using SocketIOClient.Newtonsoft.Json;
-using UnityEngine;
+//using UnityEngine;
 using Newtonsoft.Json.Linq;
 using TMPro;
 using UnityEngine.UI;
-
+using System;
 using System.Threading;
 using Microsoft.MixedReality.GraphicsTools;
 
@@ -62,22 +62,17 @@ public class EventManager : MonoBehaviour
     // random times for UI updates
     private float[] updateTimes = new float[]
     {
-        0f,    // 0:00
-        60f,   // 1:00
+        2f,    // 0:00
+        30f,   // 1:00
         105f,  // 1:45
         150f,  // 2:30
         185f,  // 3:05
         235f,  // 3:55
-        285f,  // 4:45
-        320f,  // 5:20
-        360f,  // 6:00
-        400f,  // 6:40
-        450f,  // 7:30
-        490f,  // 8:10
-        535f,  // 8:55
-        565f,  // 9:25
-        605f,  // 10:05
-        675f   // 11:15
+    };
+
+    private int[] indices = new int[]
+    {
+        5, 23, 10, 12, 16, 17, 18, 19, 21, 24, 25, 27, 28, 17, 21, 27, 5
     };
 
     private int hardcodedIndex = 0; // Default index value, can be changed in Unity Inspector
@@ -269,13 +264,15 @@ public class EventManager : MonoBehaviour
             float targetTime = startTime + updateTimes[i];
             while (Time.time < targetTime)
             {
-                yield return null; // Wait until the target time is reached
+                yield return null; //wait until the target time is reached
             }
             
-            UpdateUI(i); // Update UI based on the index
-            Debug.Log($"Updated UI at {updateTimes[i] / 60f}:{updateTimes[i] % 60f:00} with index: {i}");
+            int idx = indices[i]; //get the index to use from the indices array--> % indices.Length
+            UpdateUI(idx); //udpate UI based on the index
+            Debug.Log($"Updated UI at {updateTimes[i] / 60f}:{updateTimes[i] % 60f:00} with index: {idx}");
         }
     }
+    
     void UpdateNoti (string name, string dose, int type) {
         if (noti != null && notiTransform != null) {
             if (type == 0 && notiMedPref != null) {

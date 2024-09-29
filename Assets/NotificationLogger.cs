@@ -64,29 +64,29 @@ public class NotificationLogger : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        // Check if the perception button is pressed
-        if (isWaitingForPerceptionButton && perceptionButton.GetComponent<ButtonPressDetector>().isPressed)
-        {
-            isWaitingForPerceptionButton = false;
-            float timeTaken = Time.time - perceptionStartTime;
-            Debug.Log($"Perception button pressed after {timeTaken} seconds.");
-        }
+    // private void Update()
+    // {
+    //     // Check if the perception button is pressed
+    //     if (isWaitingForPerceptionButton && perceptionButton.GetComponent<ButtonPressDetector>().isPressed)
+    //     {
+    //         isWaitingForPerceptionButton = false;
+    //         float timeTaken = Time.time - perceptionStartTime;
+    //         Debug.Log($"Perception button pressed after {timeTaken} seconds.");
+    //     }
 
-        // Check if any directional button is pressed
-        if (isWaitingForDirectionButton)
-        {
-            foreach (GameObject button in directionalButtons)
-            {
-                if (button.GetComponent<ButtonPressDetector>().isPressed)
-                {
-                    isWaitingForDirectionButton = false;
-                    float timeTaken = Time.time - directionStartTime;
-                    Debug.Log($"Directional button {button.name} pressed after {timeTaken} seconds.");
-                    break;
-                }
-            }
-        }
-    }
+    //     // Check if any directional button is pressed
+    //     if (isWaitingForDirectionButton)
+    //     {
+    //         foreach (GameObject button in directionalButtons)
+    //         {
+    //             if (button.GetComponent<ButtonPressDetector>().isPressed)
+    //             {
+    //                 isWaitingForDirectionButton = false;
+    //                 float timeTaken = Time.time - directionStartTime;
+    //                 Debug.Log($"Directional button {button.name} pressed after {timeTaken} seconds.");
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
 }

@@ -1,0 +1,162 @@
+2024-09-24 10:51:08.891 [1] WARN BhapticsPlayer.Window.PortalWindow..ctor(): PortalWindow
+2024-09-24 10:51:12.524 [1] WARN BhapticsPlayer.Window.PortalWindow+<<-ctor>b__8_0>d.MoveNext(): PortalWindow Loaded
+2024-09-24 10:51:12.856 [1] WARN BhapticsPlayer.Internal.LocalDbRepository.InitializeDatabase(): InitializeDatabase
+2024-09-24 10:51:18.192 [1] EROR BhapticsPlayer.Audio.UserService.GetUser(): User not ready.
+2024-09-24 10:51:18.195 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:18.203 [1] EROR BhapticsPlayer.Audio.UserService.GetUser(): User not ready.
+2024-09-24 10:51:18.205 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:18.549 [1] EROR BhapticsPlayer.ViewModel.PortalMenuViewModel.InitRestMenus(): InitRestMenus
+2024-09-24 10:51:18.579 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:18.677 [14] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:18.678 [14] WARN BhapticsPlayer.Repository.ContentReviewRepository+<GetMySaveList>d__14.MoveNext(): GetMySaveList user null
+2024-09-24 10:51:18.806 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:19.735 [7] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:19.803 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:19.813 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:20.612 [1] WARN BhapticsPlayer.View.PortalWindowMainView+<<-ctor>b__1_0>d.MoveNext(): PortalWindowMainView Loaded
+2024-09-24 10:51:20.995 [1] WARN BhapticsPlayer.Window.PortalWindow+<SetPlayerData>d__13.MoveNext(): Bluetooth Version: 12
+2024-09-24 10:51:21.252 [1] WARN BhapticsPlayer.View.PortalWindowMainView+<<-ctor>b__1_0>d.MoveNext(): LastVersion: 36
+2024-09-24 10:51:22.700 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:23.047 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:23.092 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:23.134 [1] EROR BhapticsPlayer.ViewModel.ProfileMyViewModel+<>c__DisplayClass106_0.<Init>b__0(System.Object, System.ComponentModel.PropertyChangedEventArgs): Changed Settings
+2024-09-24 10:51:23.147 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:23.154 [1] EROR BhapticsPlayer.ViewModel.ProfileMyViewModel+<>c__DisplayClass106_0.<Init>b__0(System.Object, System.ComponentModel.PropertyChangedEventArgs): Changed IsEnable
+2024-09-24 10:51:23.161 [1] EROR BhapticsPlayer.ViewModel.ProfileMyViewModel+<>c__DisplayClass106_0.<Init>b__0(System.Object, System.ComponentModel.PropertyChangedEventArgs): Changed CanHapticResolution
+2024-09-24 10:51:23.462 [1] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:51:23.464 [1] WARN BhapticsPlayer.Repository.ContentReviewRepository+<GetMySaveList>d__14.MoveNext(): GetMySaveList user null
+2024-09-24 10:51:24.717 [1] WARN BhapticsPlayer.Repository.AccountRepository+<GetMyPlayedProfiles>d__14.MoveNext(): GetMyPlayedProfiles token null
+2024-09-24 10:51:37.027 [24] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): PlayerServerBehavior OnOpen com.bhaptics.designer2, bHaptics Designer
+2024-09-24 10:51:37.033 [24] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): OnOpen(f7374e6a047040f1a73b87b40e613d17) # of Clients : 1
+2024-09-24 10:53:20.184 [1] WARN BhapticsPlayer.Bluetooth.BluetoothUtilities+<GetGattCharacteristic>d__0.MoveNext(): Failed to GetGattCharacteristic(Service UUID : 6e400001-b5a3-f393-e0a9-e50e24dcca9e, Char UUID : 6e400013-b5a3-f393-e0a9-e50e24dcca9e) Number of char is zero.
+2024-09-24 10:53:35.097 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 10:53:35.180 [47] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 10:53:36.250 [55] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 10:53:36.276 [55] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 10:53:36.617 [48] WARN BhapticsPlayer.Bluetooth.TactosyDevice+<Read>d__248.MoveNext(): Read(TactSuitX40, 6e400005-b5a3-f393-e0a9-e50e24dcca9e) Failed. under sending
+2024-09-24 10:53:36.617 [48] WARN BhapticsPlayer.Bluetooth.TactosyDevice+<ReadColor>d__229.MoveNext(): ReadColor(TactSuitX40) Failed.
+2024-09-24 10:57:35.826 [18] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): PlayerServerBehavior OnOpen com.bhaptics.developers, bHaptics Developer Portal
+2024-09-24 10:57:35.828 [18] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): OnOpen(eba84b2e2838407895311c5c158e462b) # of Clients : 2
+2024-09-24 10:58:58.252 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. eba84b2e2838407895311c5c158e462b create one.
+2024-09-24 11:08:40.797 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:08:40.924 [56] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:08:42.095 [59] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:08:42.134 [59] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:08:43.938 [49] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:08:43.943 [49] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:18:48.575 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:18:48.775 [17] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:18:50.061 [24] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:18:50.154 [24] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:20:55.056 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:20:55.236 [34] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:20:55.969 [7] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:20:56.033 [7] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:33:08.196 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:33:08.482 [53] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:33:09.804 [50] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:33:09.932 [50] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:39:35.066 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:39:35.299 [22] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:39:36.253 [34] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:39:36.345 [34] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:44:07.617 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:44:07.928 [17] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:44:09.186 [45] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:44:09.253 [45] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:48:35.156 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:48:35.488 [20] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:48:36.413 [20] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:48:36.475 [20] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 11:50:06.272 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 11:50:06.614 [46] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 11:50:07.194 [46] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 11:50:07.271 [46] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:00:22.257 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:00:22.473 [46] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 12:00:23.700 [54] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:00:23.753 [54] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:08:36.022 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:08:36.367 [34] WARN BhapticsPlayer.Login.UserRepository.GetCurrentUser(): GetCurrentUser User null
+2024-09-24 12:08:37.111 [34] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.SetHapticFromHTTP(System.String, System.String, System.Int32): SetHapticFromHTTP Exception Use EnterTransaction() before EnterLock(name)
+2024-09-24 12:08:37.157 [49] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:08:37.218 [49] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:11:28.408 [47] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 12:11:28.961 [35] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:11:29.045 [35] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:11:29.055 [35] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 12:11:29.077 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:11:29.087 [35] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 12:12:07.491 [13] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 12:19:53.932 [38] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 12:19:54.228 [13] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:19:54.271 [13] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:19:54.273 [13] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 12:19:54.292 [13] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 12:19:54.296 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:20:17.420 [11] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 12:21:00.843 [27] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 12:21:01.120 [42] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:21:01.160 [42] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:21:01.161 [42] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 12:21:01.176 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:21:01.175 [42] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 12:21:30.809 [42] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 12:22:00.994 [10] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 12:22:01.315 [53] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 12:22:01.417 [53] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 12:22:01.421 [53] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 12:22:01.429 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 12:22:01.443 [53] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 12:22:18.621 [11] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 12:38:21.673 [37] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnClose(WebSocketSharp.CloseEventArgs): OnClose(f7374e6a047040f1a73b87b40e613d17). An exception has occurred while receiving.
+2024-09-24 12:38:21.699 [22] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnClose(WebSocketSharp.CloseEventArgs): OnClose(eba84b2e2838407895311c5c158e462b). An exception has occurred while receiving.
+2024-09-24 13:03:16.203 [48] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 13:12:35.879 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 13:12:36.209 [18] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 13:12:36.301 [18] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 13:12:36.307 [18] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 13:12:36.318 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 13:12:36.339 [18] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 13:13:23.641 [16] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 13:13:36.373 [7] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 13:14:41.489 [54] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 13:14:41.819 [52] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 13:14:41.936 [52] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 13:14:41.943 [52] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 13:14:41.963 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 13:14:41.987 [52] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 13:15:16.687 [5] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 13:16:39.413 [25] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 13:16:39.740 [44] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 13:16:39.830 [44] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 13:16:39.837 [44] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 13:16:39.850 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 13:16:39.867 [44] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 13:17:46.183 [38] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 13:18:36.555 [54] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 13:18:36.874 [10] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 13:18:36.958 [10] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 13:18:36.963 [10] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 13:18:36.978 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 13:18:36.999 [10] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 13:19:59.258 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 13:52:51.285 [11] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 14:14:31.563 [50] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 14:15:21.517 [14] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnOpen(): OnOpen(): Cannot access a disposed object.
+2024-09-24 14:15:21.906 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): OnMessage : SdkRequestAuthInit
+2024-09-24 14:15:21.987 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.GetHapticDeployMessage(System.String): GetHapticDeployMessage() HapticDeployHttpMessage
+2024-09-24 14:15:21.991 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit New Haptic
+2024-09-24 14:15:22.011 [12] WARN BhapticsPlayer.Haptic.AthFilePlayer.Register(BhapticsPlayer.Haptic.RegisterAthRequest): Register() Does not have an app. 666ca797311d0d6acab6b7c2 create one.
+2024-09-24 14:15:22.023 [51] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): SdkRequestAuthInit Error Use EnterTransaction() before EnterLock(name)
+2024-09-24 14:15:56.106 [41] EROR BhapticsPlayer.Websocket.HapticPatternBehavior.OnMessage(WebSocketSharp.MessageEventArgs): No Authentication (OnMessage)
+2024-09-24 15:39:03.940 [39] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 16:06:59.022 [38] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 19:53:59.289 [51] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 20:21:57.214 [43] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 22:45:39.187 [35] EROR BhapticsPlayer.Bluetooth.DeviceWatcherService+<>c__DisplayClass45_0.<InitializeDeviceWatcher>b__0(System.Object, System.Timers.ElapsedEventArgs): Call cancelled 
+2024-09-24 23:29:39.303 [39] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): PlayerServerBehavior OnOpen com.bhaptics.designer2, bHaptics Designer
+2024-09-24 23:29:39.310 [39] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnOpen(): OnOpen(0e88708e815e45aea314c6ff694abf10) # of Clients : 1
+2024-09-24 23:29:42.670 [32] WARN BhapticsPlayer.WebSocket.PlayerServerBehavior.OnClose(WebSocketSharp.CloseEventArgs): OnClose(0e88708e815e45aea314c6ff694abf10). 
+2024-09-24 23:32:51.229 [1] EROR BhapticsPlayer.Window.PortalWindow.Window_Closing(System.Object, System.ComponentModel.CancelEventArgs): Window_Closing
+2024-09-24 23:33:01.489 [1] EROR BhapticsPlayer.Window.PortalWindow.Window_Closing(System.Object, System.ComponentModel.CancelEventArgs): Window_Closing
